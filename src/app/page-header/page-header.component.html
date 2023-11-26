@@ -1,0 +1,29 @@
+<header class="_header bg-col-w">
+    <div class="_content wrap flex align-items-middle justify-content-space-between">
+        <a [routerLink]="'/'">
+            <img class="_logo"
+                 [src]="'../../assets/logo.png'">
+        </a>
+        <nav class="_nav p1">
+            <a class="_link"
+               [routerLink]="'/o-nas'">O nas</a>
+            <a class="_link"
+               [routerLink]="'/oferta'">Oferta</a>
+            <a class="_link"
+               [routerLink]="'/cennik'">Cennik</a>
+            <a class="_link"
+               [routerLink]="'/kontakt'">Kontakt</a>
+            <a class="_link"
+               [routerLink]="'/regulamin'">Regulamin</a>
+            <a class="_link"
+               [routerLink]="'/faq'"> FAQ</a>
+        </nav>
+        <!-- <div>
+                <button>
+                    <fa-icon *ifSize="'S'"
+                             [size]="'2x'"
+                             [icon]="faBars"></fa-icon>
+                </button>
+            </div> -->
+    </div>
+</header>

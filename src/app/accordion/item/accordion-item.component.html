@@ -1,0 +1,13 @@
+<li class="p1 _accordionItem m-l-5 m-r-5 p-b-4 p-t-4">
+    <div class="_title flex align-items-center justify-content-space-between">
+        <p class="h1">{{ item.title }}</p>
+        <fa-icon class="_icon"
+                 [class._rotate]="isActive"
+                 [icon]="faChevronDown"></fa-icon>
+    </div>
+    <div #contentContainer
+         class="_content p1">
+        <p class="m-t-4"
+           #content>{{ item.content }}</p>
+    </div>
+</li>

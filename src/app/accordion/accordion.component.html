@@ -1,0 +1,7 @@
+<ul>
+    @for (item of items; track $index) {
+    <app-accordion-item [item]="item"
+                        (click)="onClickHandler($index)"
+                        [isActive]="isItemActive($index)"></app-accordion-item>
+    }
+</ul>

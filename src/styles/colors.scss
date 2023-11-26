@@ -1,0 +1,19 @@
+$color1: #ecdedd;
+$color2: #dec9c8;
+$black: #2c2c2c;
+
+$colors: (
+  "col-1": $color1,
+  "col-2": $color2,
+  "col-w": white,
+  "col-b": $black,
+);
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  .#{$name} {
+    color: $color;
+  }
+}
