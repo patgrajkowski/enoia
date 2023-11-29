@@ -1,7 +1,22 @@
 ._container{
     display: grid;
-    grid-template-columns: 3fr 1fr;
-
-
+    grid-template-columns: 1fr 1fr;
 }
+._wrap2{
+    width: 60vw;
+    text-align: center;
+    margin: 0 auto;
+    
+    span{
+        text-align: right;
+    }
 
+    hr{
+        width: 35vw;
+        height: 0.1vh;
+        margin: 0 auto;
+        background-color: white;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
