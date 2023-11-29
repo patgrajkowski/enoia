@@ -1,9 +1,17 @@
 ._container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    .test{
+        border-top: 2px;
+        border-bottom: 2px;
+        border-top-color: white;
+        border-bottom-color: white;
+        border-top-width: 200px;
+        border-bottom-width: solid;
+    }
 }
 ._wrap2{
-    width: 60vw;
     text-align: center;
     margin: 0 auto;
     
@@ -12,11 +20,16 @@
     }
 
     hr{
-        width: 35vw;
         height: 0.1vh;
         margin: 0 auto;
         background-color: white;
         margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+    ._top-lane{
+        width: 1000px;
+    }
+    ._bottom-lane{
+        width: 750px;
     }
 }
