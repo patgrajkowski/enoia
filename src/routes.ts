@@ -6,6 +6,7 @@ import { FaqViewComponent } from './app/faq-view/faq-view.component';
 import { HomepageViewComponent } from './app/homepage-view/homepage-view.component';
 import { PriceListViewComponent } from './app/price-list-view/price-list-view.component';
 import { RulesViewComponent } from './app/rules-view/rules-view.component';
+import { TeamViewComponent } from './app/team-view/team-view.component';
 
 export const routes: Route[] = [
   {
@@ -35,5 +36,9 @@ export const routes: Route[] = [
   {
     path: 'oferta',
     component: ClassesViewComponent,
+  },
+  {
+    path: 'team',
+    component: TeamViewComponent,
   },
 ];

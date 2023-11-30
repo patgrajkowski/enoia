@@ -1,0 +1,55 @@
+img{
+    height: 420px;
+    width: 284px;  
+}
+
+._container {
+    height: 420px;
+    width: 284px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid blue;
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+      width: 284px;
+      height: 420px;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      transition: all .5s;  
+    }
+
+    &::after {
+      content: "Grzegorz Badura";
+      color: white;
+      position: absolute;
+      animation: 2s anim-lineUp ease-out infinite;
+    }
+  }
+}
+
+
+// /* lineup class and keyframes */
+// .lineUp {
+//   animation: 2s anim-lineUp ease-out infinite;
+// }
+// @keyframes anim-lineUp {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(80%);
+//   }
+//   20% {
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 1;
+//     transform: translateY(0%);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0%);
+//   }
+// }
