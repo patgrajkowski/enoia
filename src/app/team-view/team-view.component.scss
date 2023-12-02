@@ -1,55 +1,74 @@
-img{
-    height: 420px;
-    width: 284px;  
-}
+._wraper{
 
-._container {
-    height: 420px;
-    width: 284px; 
     display: flex;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border: 2px solid blue;
-
-  &:hover {
-    img {
-      transform: scale(1.1);
-      width: 284px;
-      height: 420px;
-      -webkit-transition: all .5s;
-      -moz-transition: all .5s;
-      transition: all .5s;  
+    
+    .h1{
+      font-weight: 800;
     }
+    .p1{
+      font-size: .9rem;
+    }
+    .box{
+      width: 80vw;
+    }
+}
 
-    &::after {
-      content: "Grzegorz Badura";
-      color: white;
-      position: absolute;
-      animation: 2s anim-lineUp ease-out infinite;
+
+img{
+    height: 100%;
+    width: 100%;  
+}
+
+._container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 50vw;
+    margin: 0 auto;
+
+
+  ._picture-box {
+ 
+      height: 420px;
+      width: 284px; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      overflow: hidden;
+      margin-bottom: 2rem;
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+        width: 284px;
+        height: 420px;
+        transition: all .5s;  
+      }
+
+      &::after {
+        content: "Grzegorz Badura";
+        color: white;
+        position: absolute;
+        animation: 0.5s anim-lineUp ease-out;
+        font-weight: 400;
+        font-size: 20px;;
+        font-family: "Inter", sans-serif;
+      }
     }
   }
 }
 
-
-// /* lineup class and keyframes */
-// .lineUp {
-//   animation: 2s anim-lineUp ease-out infinite;
-// }
-// @keyframes anim-lineUp {
-//   0% {
-//     opacity: 0;
-//     transform: translateY(80%);
-//   }
-//   20% {
-//     opacity: 0;
-//   }
-//   50% {
-//     opacity: 1;
-//     transform: translateY(0%);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateY(0%);
-//   }
-// }
+.lineUp {
+  animation: 0.5s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
