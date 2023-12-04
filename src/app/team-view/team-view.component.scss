@@ -1,0 +1,60 @@
+._wraper {
+  display: flex;
+  justify-content: center;
+
+  ._title {
+    font-weight: 800;
+  }
+  ._description {
+    font-size: 0.9rem;
+  }
+}
+
+._container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1000px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  ._picture-box {
+    aspect-ratio: 3 / 4;
+    width: 284px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    position: relative;
+    content: var(--name, "");
+
+    img {
+      transform: scale(1);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    &::after {
+      content: "Placeholder";
+      width: 100%;
+      top: 70%;
+      left: 0;
+      opacity: 0;
+      transform: translate(0%, -50%);
+      transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
+      text-align: center;
+      color: white;
+      position: absolute;
+      font-weight: 400;
+      font-size: 20px;
+      font-family: "Inter", sans-serif;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+
+      &::after {
+        top: 50%;
+        opacity: 1;
+      }
+    }
+  }
+}
