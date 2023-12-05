@@ -30,8 +30,7 @@
       transition: transform 0.5s ease-in-out;
     }
 
-    &::after {
-      content: "Placeholder";
+    span {
       width: 100%;
       top: 70%;
       left: 0;
@@ -51,7 +50,7 @@
         transform: scale(1.1);
       }
 
-      &::after {
+      span {
         top: 50%;
         opacity: 1;
       }
